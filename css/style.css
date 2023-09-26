@@ -2,7 +2,11 @@
 	background: antiquewhite;
 }
 
-table,
+table{
+	border-collapse: collapse;
+}
+
+table, table caption,
 td {
 	border: 1px solid #333;
 }
@@ -13,8 +17,32 @@ table img{
 	width: 397px;
 }
 
+table caption{
+	background: cornflowerblue;
+	color: white;
+	padding: 10px 20px;
+	caption-side: top;
+}
+
 thead,
 tfoot {
 	background-color: #333;
 	color: #fff;
+}
+
+th{
+	padding: 2px;
+	border: 1px solid #333;
+	text-align: center;
+}
+td{
+	text-align: center;
+}
+
+#colrow{
+	background: inherit;
+}
+
+tbody th{
+	background: #cbcbcb;
 }
