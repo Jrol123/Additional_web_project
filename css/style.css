@@ -2,6 +2,12 @@
 	background: antiquewhite;
 }
 
+table{
+	border-collapse: collapse;
+	/*border-spacing: 50px;*/
+	/*Отвечает за то, будут ли расстояния между ячейками.*/
+}
+
 div{
 	display: flex;
 	justify-content: center;
@@ -32,7 +38,6 @@ tfoot {
 }
 
 th{
-	padding: 2px;
 	border: 1px solid #333;
 	text-align: center;
 }
