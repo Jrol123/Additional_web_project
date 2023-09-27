@@ -3,6 +3,7 @@
 	color: white;
 	font-family: 'Overpass', sans-serif;
 	font-weight: 600;
+	--background-table: #4b4b4b
 }
 
 /*TEXT*/
@@ -85,7 +86,7 @@ td{
 }
 
 tbody th{
-	background: #626262;
+	background: var(--background-table);
 }
 
 /*UL*/
@@ -121,7 +122,7 @@ li li li{
 /*FORM*/
 
 form input{
-	background: rgb(128, 128, 128);
+	background: var(--background-table);
 	padding: 5px 0px;
 	text-align: center;
 }
