@@ -125,6 +125,7 @@ form input{
 	background: var(--background-table);
 	padding: 5px 0px;
 	text-align: center;
+	color:white
 }
 
 label, input{
