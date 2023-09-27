@@ -4,53 +4,128 @@
 	<meta charset="UTF-8">
 	<title>Эксперименты с таблицами</title>
 	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="table">
-	<table>
-		<thead>
-			<tr>
-				<th colspan="5">Table 1</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td> </td>
-				<th>Subheader</th>
-				<th>Subheader</th>
-				<th>Subheader</th>
-				<th>Subheader</th>
-			</tr>
-			<tr>
-				<th>
-					Category
-				</th>
-				<td>text</td>
-				<td>text</td>
-			</tr>
-			<tr>
-				<th id = "colrow" rowspan="3" colspan="3"><img src="img/Arstozka.png" alt="arstozka.png"> </th>
-<!--				Самостоятельно ограничен по высоте + ширине.-->
-				<td>text</td>
-				<td>text</td>
-			</tr>
-			<tr>
-				<td>text</td>
-				<td>text</td>
-			</tr>
-			<tr>
-				<td>text</td>
-				<td>text</td>
-			</tr>
-			<tr>
-				<td>text</td>
-				<td>text</td>
-				<td>text</td>
-				<td>text</td>
-				<td>text</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
+<!--Почему-то в mozilla рекомендуется работать через scope-->
+	<div class="table">
+		<table>
+			<caption id="spec_cap">
+				Причины, почему Арстоцка — лучшее государство
+			</caption>
+			<thead>
+				<tr>
+					<th colspan="5">Таблица разниц</th>
+<!--				<th colspan="3">Table 1-2</th>-->
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td> </td>
+					<th>Условия работы</th>
+					<th>Условия проживания</th>
+					<th>Демократичность</th>
+					<th>Военная мощь</th>
+				</tr>
+				<tr>
+					<th>
+						Кобрастан
+					</th>
+					<td>Работы нет</td>
+					<td>Все стремятся в Арстоцку</td>
+					<td>Государства нет</td>
+					<td>Отсутствует</td>
+				</tr>
+				<tr>
+					<th id = "imgrow" rowspan="3" colspan="1"><img src="img/Arstozka.png" alt="arstozka.png"> </th>
+	<!--				Самостоятельно ограничен по высоте + ширине.-->
+					<td>Великолепные условия</td>
+					<td></td>
+					<td>text</td>
+					<td>text</td>
+				</tr>
+				<tr>
+					<td>Лотерея работы</td>
+					<td>text</td>
+					<td>text</td>
+					<td>text</td>
+				</tr>
+				<tr>
+					<td>Дружелюбные сослуживцы</td>
+					<td>text</td>
+					<td>text</td>
+					<td>text</td>
+				</tr>
+				<tr>
+					<th>Колечия</th>
+					<td>text</td>
+					<td>text</td>
+					<td>text</td>
+					<td>text</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="table">
+		<table>
+			<caption>THE BEST CAPTION</caption>
+			<tbody>
+				<tr>
+					<th rowspan="2" class="bbdd"><b>Bold</b></th>
+					<th colspan="2"><em>Cursive</em></th>
+					<th colspan="2"><em>Cursive</em></th>
+					<th rowspan="2" class="bbdd"><b>Bold</b></th>
+				</tr>
+				<tr>
+					<td>Обычный</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<th rowspan="3"  class="bbd bbdd" >Bold</th>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td class="bbdd"> </td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td class="bbdd"> </td>
+
+				</tr>
+				<tr>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td class="bbdd"> </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<ul>
+		<li>1-st element</li>
+		<li>
+			2-nd element
+			<ul>
+				<li>sub-element</li>
+				<li>
+					sub-element
+					<ul>
+						<li>sub-sub-element</li>
+						<li>sub-sub-element</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
 </body>
 </html>

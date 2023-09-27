@@ -1,6 +1,10 @@
 :root{
 	background: antiquewhite;
+	font-family: 'Overpass', sans-serif;
+	font-weight: 600;
 }
+
+/*TABLE*/
 
 table{
 	border-collapse: collapse;
@@ -10,25 +14,38 @@ table{
 
 div{
 	display: flex;
+	margin: 10px 0px 20px;
 	justify-content: center;
 }
 
-table, table caption,
-td {
+table{
 	border: 1px solid #333;
 }
 
+td, th, tr{
+	border: 1px solid #333;
+	height: 40px;
+	width: 100px;
+}
+/*Не работает min-height*/
+
+.bbdd{
+	width: 60px;
+}
+
+.bbd{
+	height: 100px;
+}
+
 table img{
-	margin-left: auto;
-	margin-right: auto;
 	width: 397px;
 }
 
-table caption{
-	background: cornflowerblue;
-	color: white;
-	padding: 10px 20px;
-	caption-side: top;
+#spec_cap{
+	background: #97baff;
+	color: black;
+	caption-side: bottom;
+	padding: 10px
 }
 
 thead,
@@ -38,17 +55,39 @@ tfoot {
 }
 
 th{
+	/*font-weight: 600;*/
 	border: 1px solid #333;
 	text-align: center;
 }
+/*Почему-то для th font-weight приходится прописывать вручную*/
 td{
 	text-align: center;
 }
 
-#colrow{
+#imgrow{
 	background: inherit;
 }
 
 tbody th{
 	background: #cbcbcb;
+}
+
+/*UL*/
+
+ul{
+	list-style-type: -moz-ethiopic-numeric;
+}
+
+ul ul{
+	list-style-type: circle;
+}
+ul ul ul{
+	list-style-type: square;
+}
+
+li{
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	line-height: 1.4;
+	letter-spacing: 1px;
 }
