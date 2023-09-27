@@ -122,8 +122,8 @@ li li li{
 
 form input{
 	background: rgb(128, 128, 128);
-	margin: auto;
-	padding-top: 10px;
+	padding: 5px 0px;
+	text-align: center;
 }
 
 label, input{
