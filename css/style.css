@@ -121,20 +121,21 @@ li li li{
 
 /*FORM*/
 
-form input{
+form input, form select, form textarea{
 	background: var(--background-table);
 	padding: 5px 0px;
 	text-align: center;
-	color:white
+	color:white;
 }
 
 label, input{
 	display: table-cell;
 }
 
-#bigform{
-	margin: auto;
-}
-#bigform input{
-	padding: 30px 80px;
+#bigform textarea{
+	text-align: start;
+	/*margin: 30px 80px;*/
+	width: 340px;
+	height: 70px;
+	/*padding: 30px 80px;*/
 }

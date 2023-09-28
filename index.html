@@ -112,12 +112,15 @@
 					</th>
 					<td class="form">
 						<form action="" method="get">
-							<input type="text" name="birth-year" required />
+							<input type="date" name="birth-year" required />
 						</form>
 					</td>
 					<td class="form">
 						<form action="" method="get">
-							<input type="text" name="birth-place" required />
+							<select name="birth-place">
+								<option value="">Выберите вашу страну</option>
+								<option value="Колечия">Колечия</option>
+							</select>
 						</form>
 					</td>
 					<td class="form">
@@ -139,7 +142,9 @@
 				<tr>
 					<td rowspan="2" colspan="2" class="form">
 						<form action="" method="get" id="bigform">
-							<input type="text" name="name" required />
+							<textarea name="reason">
+
+							</textarea>
 						</form>
 					</td>
 					<td class="form">
