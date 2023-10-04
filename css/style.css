@@ -155,7 +155,7 @@ label, input{
 
 /*BUTTON*/
 
-caption button{
+p button{
 	padding: 10px;
 	font-size: 22px;
 	font-weight: bold;
@@ -165,5 +165,5 @@ caption button{
 
 #send{
 	margin: 20px;
-	caption-side: bottom;
+	text-align: center;
 }
