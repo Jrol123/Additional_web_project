@@ -1,6 +1,7 @@
 :root{
 	background: #000000;
-	color: white;
+	--text-col: white;
+	color: var(--text-col);
 	font-family: 'Overpass', sans-serif;
 	font-weight: 600;
 	--background-table: #4b4b4b
@@ -8,7 +9,13 @@
 
 /*TEXT*/
 
+strong{
+	font-weight: 1000;
+}
+/*Не работает*/
+
 h1{
+	align-self: center;
 	margin-top: 60px;
 }
 
@@ -61,7 +68,7 @@ table img{
 
 #spec_cap{
 	background: #516280;
-	color: #ffffff;
+	color: var(--text-col);
 	caption-side: bottom;
 	padding: 10px
 }
@@ -91,6 +98,10 @@ tbody th{
 
 /*UL*/
 
+details{
+	margin: 20px 0px;
+}
+
 ul{
 	font-size: 20px;
 	list-style-type: -moz-ethiopic-numeric;
@@ -99,7 +110,9 @@ ul{
 
 ul ul{
 	list-style-type: circle;
+	padding-bottom: 2px;
 }
+
 ul ul ul{
 	list-style-type: square;
 }
@@ -107,16 +120,16 @@ ul ul ul{
 li{
 	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
-	line-height: 1.4;
+	line-height: 1.5;
 	letter-spacing: 1px;
 	font-size: 25px
 }
 
 li li{
-	font-size: 15px;
+	font-size: 20px;
 }
 li li li{
-	font-size: 10px;
+	font-size: 15px;
 }
 
 /*FORM*/
@@ -125,7 +138,7 @@ form input, form select, form textarea{
 	background: var(--background-table);
 	padding: 5px 0px;
 	text-align: center;
-	color:white;
+	color: var(--text-col);
 }
 
 label, input{
@@ -138,4 +151,19 @@ label, input{
 	width: 340px;
 	height: 70px;
 	/*padding: 30px 80px;*/
+}
+
+/*BUTTON*/
+
+caption button{
+	padding: 10px;
+	font-size: 22px;
+	font-weight: bold;
+	color: var(--text-col);
+	background: var(--background-table);
+}
+
+#send{
+	margin: 20px;
+	caption-side: bottom;
 }
