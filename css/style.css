@@ -96,6 +96,12 @@ tbody th{
 	background: var(--background-table);
 }
 
+/*FIELDSET*/
+
+fieldset{
+	min-height: 80px;
+}
+
 /*UL*/
 
 details{
@@ -134,11 +140,19 @@ li li li{
 
 /*FORM*/
 
-form input, form select, form textarea{
+input, form select, form textarea{
 	background: var(--background-table);
 	padding: 5px 0px;
 	text-align: center;
 	color: var(--text-col);
+}
+
+input{
+	margin: 1px;
+	text-align: start;
+}
+#tel{
+	width: auto;
 }
 
 label, input{
@@ -147,7 +161,7 @@ label, input{
 
 #bigform textarea{
 	text-align: start;
-	/*margin: 30px 80px;*/
+	/*margin: 10px;*/
 	width: 340px;
 	height: 70px;
 	/*padding: 30px 80px;*/

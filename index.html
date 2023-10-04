@@ -81,7 +81,7 @@
 			<tbody>
 				<tr>
 					<th rowspan="2" class="bbdd"><b>Основная информация</b></th>
-					<th colspan="2"><em>Имя / Фамилия</em></th>
+					<th colspan="2"><em>Имя | Фамилия</em></th>
 					<th colspan="2"><em>Приметные внешние черты</em></th>
 					<th rowspan="2" class="bbdd"><b>Цели переезда</b></th>
 				</tr>
@@ -120,8 +120,16 @@
 					<td class="form">
 						<form action="" method="get">
 							<select name="birth-place">
-								<option value="">Выберите вашу страну</option>
-								<option value="Колечия">Колечия</option>
+								<option value="" disabled selected>Выберите вашу страну</option>
+								<optgroup label="Ближайшие страны">
+									<option value="Колечия">Колечия</option>
+									<option value="Обристан">Орбистан</option>
+								</optgroup>
+								<optgroup label="Дальние страны">
+									<option value="Антегрия">Антегрия</option>
+									<option value="Республия">Республия</option>
+									<option value="Импор">Импор</option>
+								</optgroup>
 							</select>
 						</form>
 					</td>
@@ -149,14 +157,19 @@
 							</textarea>
 						</form>
 					</td>
-					<td class="form">
-						<form action="" method="get">
-							<input type="text" name="name" required>
-						</form>
-					</td>
-					<td class="form">
-						<form action="" method="get">
-							<input type="text" name="name" required>
+					<td class="form" rowspan="2" colspan="2">
+						<form>
+							<fieldset>
+<!--								При вынесении input за label происходит переход на новую строку-->
+								<legend>Дополнительная информация</legend>
+								<label for="tel">Номер телефона:
+									<input type="tel" id="tel" name="tel-number" value="+7">
+								</label>
+								<br>
+								<label for="number">Количество родственников:
+									<input type="tel" id="number" name="tel-number" value="+7">
+								</label>
+							</fieldset>
 						</form>
 					</td>
 					<td class="form bbdd">
