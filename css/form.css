@@ -1,0 +1,167 @@
+/*TABLE*/
+
+table{
+	border-collapse: collapse;
+	/*border-spacing: 50px;*/
+	/*Отвечает за то, будут ли расстояния между ячейками.*/
+}
+
+div{
+	display: flex;
+	margin: 10px 0px 20px;
+	justify-content: center;
+}
+
+table{
+	border: 1px solid #333;
+}
+
+td, th, tr{
+	border: 1px solid #333;
+	height: 40px;
+	width: 100px;
+	padding: 5px;
+}
+/*Не работает min-height*/
+
+.bbdd{
+	width: 60px;
+}
+
+.bbd{
+	height: 100px;
+}
+
+table img{
+	width: 397px;
+}
+
+#spec_cap{
+	background: #516280;
+	color: var(--text-col);
+	caption-side: bottom;
+	padding: 10px
+}
+
+thead,
+tfoot {
+	background-color: #333;
+}
+
+th{
+	/*font-weight: 600;*/
+	border: 1px solid #333;
+	text-align: center;
+}
+/*Почему-то для th font-weight приходится прописывать вручную*/
+td{
+	text-align: center;
+}
+
+#imgrow{
+	background: inherit;
+}
+
+tbody th{
+	background: var(--background-table);
+}
+
+/*FIELDSET*/
+
+fieldset{
+	min-height: 80px;
+}
+
+/*UL*/
+
+details{
+	margin: 20px 0px;
+}
+
+ul{
+	font-size: 20px;
+	list-style-type: -moz-ethiopic-numeric;
+	margin: 10px 0px;
+}
+
+ul ul{
+	list-style-type: circle;
+	padding-bottom: 2px;
+}
+
+ul ul ul{
+	list-style-type: square;
+}
+
+li{
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	font-size: 25px
+}
+
+li li{
+	font-size: 20px;
+}
+li li li{
+	font-size: 15px;
+}
+
+/*FORM*/
+
+input, form select, form textarea{
+	background: var(--background-table);
+	padding: 5px 0px;
+	text-align: center;
+	color: var(--text-col);
+}
+
+input{
+	margin: 1px;
+	text-align: start;
+}
+
+#graz_form{
+	background: url("/img/backgorund.jpg");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*Результат будет другим, если no-repeat и center поместить в параметры background*/
+}
+
+#tel{
+	width: auto;
+}
+
+#number{;
+	width: 30px;
+	text-align: center;
+}
+
+label, input{
+	display: table-cell;
+}
+
+#bigform textarea{
+	text-align: start;
+	/*margin: 10px;*/
+	width: 340px;
+	height: 70px;
+	/*padding: 30px 80px;*/
+}
+
+/*BUTTON*/
+
+p button{
+	padding: 10px;
+	font-size: 22px;
+	font-weight: bold;
+	color: var(--text-col);
+	background: var(--background-table);
+}
+
+#send{
+	margin: 20px;
+	text-align: center;
+}
