@@ -1,0 +1,48 @@
+:root{
+	background: #000000;
+	--text-col: white;
+	color: var(--text-col);
+	font-family: 'Overpass', sans-serif;
+	font-weight: 600;
+	--background-table: #4b4b4b
+}
+
+/*TEXT*/
+
+strong{
+	font-weight: 900;
+}
+/*Не работает*/
+
+h1{
+	align-self: center;
+	margin-top: 60px;
+}
+
+h1, h3{
+	text-align: center;
+	margin-bottom: 40px;
+}
+h3{
+	font-size: 10px;
+	margin-top: -10px;
+}
+
+/*LINK*/
+
+a{
+	/*text-decoration: none;*/
+}
+
+a:visited{
+	color: inherit
+}
+
+a:hover{
+	background: red;
+	/*outline: green;*/
+	/*text-decoration: white;*/
+	/* При включении этого параметра пропадает декорация*/
+}
+
+
