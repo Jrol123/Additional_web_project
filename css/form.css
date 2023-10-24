@@ -143,6 +143,10 @@ label, input{
 	display: table-cell;
 }
 
+input[type="text"]{
+	font-size: 12px;
+}
+
 #bigform textarea{
 	text-align: start;
 	/*margin: 10px;*/

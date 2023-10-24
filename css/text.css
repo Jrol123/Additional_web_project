@@ -31,7 +31,7 @@ h3{
 /*LINK*/
 
 a{
-	/*text-decoration: none;*/
+	color: inherit;
 }
 
 a:visited{
@@ -45,4 +45,14 @@ a:hover{
 	/* При включении этого параметра пропадает декорация*/
 }
 
+/*NAV*/
 
+a[href^="#"]:hover{
+	background: orangered;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-around;
+	font-size: 20px;
+}
